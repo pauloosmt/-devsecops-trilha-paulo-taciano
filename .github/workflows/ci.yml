@@ -37,7 +37,7 @@ jobs:
         with:
           scan-type: fs
           scan-ref: app/
-          severity: HIGH, CRITICAL
+          severity: HIGH,CRITICAL
           ignore-unfixed: true
           exit-code: 1
 
