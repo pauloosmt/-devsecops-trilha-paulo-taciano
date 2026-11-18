@@ -1,11 +1,11 @@
-FROM node:14
+FROM node:20-alpine
 
 WORKDIR /app
 
 COPY package.json package-lock.json* ./
-RUN npm install --omit=dev
+RUN npm ci --omit=dev
 
-COPY --chown=node:node . . 
+COPY --chown=node:node . .
 
 EXPOSE 3000
 
